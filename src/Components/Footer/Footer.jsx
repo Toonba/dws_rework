@@ -14,7 +14,7 @@ function Footer() {
   return (
     <>
       <footer ref={targetRef} className="w-screen h-screen text-white flex justify-center items-center relative">
-        <motion.div style={{ opacity, scale }} className="w-1/2 h-1/2 flex flex-col justify-center items-center fixed top-1/3">
+        <motion.div style={{ opacity, scale }} className="max-w-7xl w-1/2 h-1/2 flex flex-col justify-center items-center fixed top-1/3">
           <h3 className="text-5xl mb-5 text-yellow-300 font-bagel">Let's Talk</h3>
           <p className="text-center text-xl">
             Ready to transform your idea into digital experience? So are we! Let's hop on a call. contact us at{' '}

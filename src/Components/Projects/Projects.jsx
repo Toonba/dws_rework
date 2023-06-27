@@ -45,10 +45,10 @@ function Projects() {
   return (
     <>
       <section ref={targetRef} className="w-screen h-screen text-white">
-        <motion.div style={{ opacity }} className="w-full h-full">
-          <h2 className="text-6xl pl-40 text-yellow-300 font-bagel">Projects</h2>
-          <p className="pl-40 pt-4 text-xl">Recent projects that we loved working on.</p>
-          <div ref={ref} className="flex justify-between items-center w-[90vw] h-3/4 m-auto mt-10 relative overflow-hidden">
+        <motion.div style={{ opacity }} className="max-w-7xl w-full h-full m-auto">
+          <h2 className="text-6xl  text-yellow-300 font-bagel">Projects</h2>
+          <p className=" pt-4 text-xl">Recent projects that we loved working on.</p>
+          <div ref={ref} className="flex justify-between items-center w-full h-3/4 m-auto mt-10 relative overflow-hidden">
             <div className="flex justify-center items-center h-1/4 rounded-2xl hover:bg-slate-900" onClick={prevProject}>
               <i className="fa-solid fa-chevron-left flex-1 cursor-pointer text-4xl p-2 text-yellow-300"></i>
             </div>

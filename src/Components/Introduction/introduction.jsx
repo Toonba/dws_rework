@@ -14,7 +14,7 @@ function Introduction() {
   return (
     <>
       <section ref={targetRef} className="w-screen h-screen flex justify-center items-center relative">
-        <motion.p style={{ scale, opacity }} className="w-2/3 text-white text-2xl text-center fixed top-1/2">
+        <motion.p style={{ scale, opacity }} className="max-w-7xl w-2/3 text-white text-2xl text-center fixed top-1/2">
           Deep Water Studios has specialists for all facets of the digital experience. Whether it’s <motion.span className=" text-3xl text-yellow-200 font-bagel whitespace-nowrap">web development</motion.span>, <motion.span className="text-3xl text-yellow-200 font-bagel whitespace-nowrap">smart contracts</motion.span>, or <motion.span className="text-3xl text-yellow-200 font-bagel whitespace-nowrap">back-end infrastructure</motion.span>, we have a track record of delivering top-tier products.
         </motion.p>
       </section>

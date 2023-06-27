@@ -7,7 +7,9 @@ import Skills from './Components/Skills/Skills'
 function App() {
   return (
     <>
-      <header className="w-screen pl-40 bg-gradient-to-b from-headerBlueStart to-headerBlueEnd text-white font-bold ">DEEP WATER STUDIO</header>
+      <header className="w-screen bg-gradient-to-b from-headerBlueStart to-headerBlueEnd text-white font-bold ">
+        <div className="max-w-7xl w-full pl-40"> DEEP WATER STUDIO</div>
+      </header>
       <Hero />
       <Introduction />
       <Skills />

@@ -15,7 +15,7 @@ function Skills() {
   return (
     <>
       <section ref={targetRef} className="w-screen h-screen flex justify-center items-center text-white overflow-hidden relative">
-        <motion.div style={{ x, opacity }} className="w-[90vw] h-1/4 flex justify-between items-start gap-8 fixed top-1/2">
+        <motion.div style={{ x, opacity }} className=" max-w-7xl w-[90vw] h-1/4 flex justify-between items-start gap-8 fixed top-1/2">
           {skillsData.map((skill, index) => {
             return (
               <motion.div /*initial={{ x: -100, scale: 0, opacity: 0 }} whileInView={{ x: 0, scale: 1, opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 * index }}*/ div className="" key={`${skill.title}-${index}`}>
