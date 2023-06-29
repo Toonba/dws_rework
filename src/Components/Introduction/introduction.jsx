@@ -1,21 +1,22 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
+import PropTypes from 'prop-types'
 
-function Introduction() {
+function Introduction({ isMobile }) {
   const targetRef = useRef(null)
   const { scrollYProgress } = useScroll({
     target: targetRef,
-    offset: ['center end', 'end start']
+    offset: ['start end', 'end center']
   })
 
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 0.7], [0, 1, 0])
-  const scale = useTransform(scrollYProgress, [0, 0.5, 0.7], [0, 1.2, 0])
+  const opacity = useTransform(scrollYProgress, [0.1, 1], [0, 1])
+  const scale = useTransform(scrollYProgress, [0, 1], [0, 1.2])
 
   return (
     <>
-      <section ref={targetRef} className="w-screen h-screen flex justify-center items-center relative">
-        <motion.p style={{ scale, opacity }} className="max-w-7xl w-2/3 text-white text-2xl text-center fixed top-1/2">
-          Deep Water Studios has specialists for all facets of the digital experience. Whether it’s <motion.span className=" text-3xl text-yellow-200 font-bagel whitespace-nowrap">web development</motion.span>, <motion.span className="text-3xl text-yellow-200 font-bagel whitespace-nowrap">smart contracts</motion.span>, or <motion.span className="text-3xl text-yellow-200 font-bagel whitespace-nowrap">back-end infrastructure</motion.span>, we have a track record of delivering top-tier products.
+      <section className="w-screen md:h-[10vh] h-[50vh] flex justify-center items-center relative">
+        <motion.p ref={targetRef} style={{ scale: isMobile ? 1 : scale, opacity: isMobile ? 1 : opacity }} className="max-w-7xl w-5/6 text-white md:text-2xl text-lg text-center md:sticky top-2">
+          Deep Water Studios has specialists for all facets of the digital experience. Whether it’s <span className=" md:text-3xl text-lg text-yellow-200 font-bagel whitespace-nowrap">web development</span>, <span className="md:text-3xl text-lg text-yellow-200 font-bagel whitespace-nowrap">smart contracts</span>, or <span className="md:text-3xl text-lg text-yellow-200 font-bagel whitespace-nowrap">back-end infrastructure</span>, we have a track record of delivering top-tier products.
         </motion.p>
       </section>
     </>
@@ -23,3 +24,7 @@ function Introduction() {
 }
 
 export default Introduction
+
+Introduction.propTypes = {
+  isMobile: PropTypes.bool.isRequired
+}
