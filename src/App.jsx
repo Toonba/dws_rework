@@ -4,7 +4,6 @@ import Hero from './Components/Hero/Hero'
 import Introduction from './Components/Introduction/introduction'
 import Projects from './Components/Projects/Projects'
 import Skills from './Components/Skills/Skills'
-import CrashTest from './CrashTest/CrashTest'
 
 function App() {
   const [isMobile, setIsMobile] = useState(false)

@@ -82,8 +82,8 @@ function CardDeck({ project, isMobile }) {
 
             <motion.div initial={{ transform: 'rotateY(0deg)' }} animate={animationCard2} transition={{ duration: 1 }} onClick={handleClickCard2} className="w-2/3 [aspect-ratio:6/9] absolute m-auto [transform-style: preserve-3d] [backface-visibility:hidden] inset-1 border border-yellow-200 bg-blue-950 rounded-xl overflow-hidden">
               <img className="w-full aspect-square" src={project.picture} alt={`${project.title} logo`} />
-              <div className={`flex flex-col gap-4 justify-start w-full items-center h-1/2`}>
-                <h3 className="text-[6vw] w-full text-center md:pt-4 text-yellow-300 font-bagel">{project.title}</h3>
+              <div className={`flex flex-col gap-4 justify-center w-full items-center h-1/2`}>
+                <h3 className="text-[6vw] w-full text-center md:pt-4 text-yellow-300 font-bagel m-0">{project.title}</h3>
                 <a href={project.link} className="w-1/2 h-[6vw] flex justify-center items-center bg-blue-950 rounded-xl hover:bg-blue-500 border z-20 border-yellow-200">
                   <div className="w-full md:text-2xl text-[3vw] text-center text-yellow-300 font-bagel">Take a look</div>
                 </a>

@@ -17,7 +17,7 @@ function Hero({ isMobile }) {
   const scale = useTransform(scrollYProgress, [0, 0.5], [1.2, 0])
 
   return (
-    <section ref={targetRef} className="relative w-screen h-[90vh] bg-gradient-to-b from-headerBlueEnd to-black text-white flex justify-center items-center">
+    <section ref={targetRef} className="relative w-screen h-screen bg-gradient-to-b from-headerBlueEnd to-black text-white flex justify-center items-center">
       <motion.div style={{ opacity: isMobile ? 1 : opacity, scale: isMobile ? 1 : scale }} className="max-w-7xl md:w-full w-2/3 md:fixed">
         <motion.div initial={isMobile ? { opacity: 1, scale: 1, x: 0 } : { opacity: 0, scale: 0, x: -200 }} animate={{ opacity: 1, scale: 1, x: 0 }} transition={{ duration: 2.5, type: 'spring' }} className="w-[200px] aspect-square m-auto relative z-10">
           <img className="w-full absolute top-0" src={fish} alt="dws logo" />
