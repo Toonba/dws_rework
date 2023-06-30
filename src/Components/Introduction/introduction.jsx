@@ -14,9 +14,9 @@ function Introduction({ isMobile }) {
 
   return (
     <>
-      <section className="w-screen md:h-[10vh] h-[50vh] flex justify-center items-center relative">
-        <motion.p ref={targetRef} style={{ scale: isMobile ? 1 : scale, opacity: isMobile ? 1 : opacity }} className="max-w-7xl w-5/6 text-white md:text-2xl text-lg text-center md:sticky top-2">
-          Deep Water Studios has specialists for all facets of the digital experience. Whether it’s <span className=" md:text-3xl text-lg text-yellow-200 font-bagel whitespace-nowrap">web development</span>, <span className="md:text-3xl text-lg text-yellow-200 font-bagel whitespace-nowrap">smart contracts</span>, or <span className="md:text-3xl text-lg text-yellow-200 font-bagel whitespace-nowrap">back-end infrastructure</span>, we have a track record of delivering top-tier products.
+      <section className="w-screen h-[70vh] flex justify-center items-center relative">
+        <motion.p ref={targetRef} style={{ scale: isMobile ? 1 : scale, opacity: isMobile ? 1 : opacity }} className="max-w-screen-xl w-5/6 text-white md:text-2xl text-lg text-center">
+          Deep Water Studios has specialists for all facets of the digital experience. Whether it’s <span className="font-bold text-yellow-200 font-bagel whitespace-nowrap">web development</span>, <span className="font-bold text-yellow-200 font-bagel whitespace-nowrap">smart contracts</span>, or <span className="font-bold text-yellow-200 font-bagel whitespace-nowrap">back-end infrastructure</span>, we have a track record of delivering top-tier products.
         </motion.p>
       </section>
     </>

@@ -46,9 +46,9 @@ function Projects({ isMobile }) {
   return (
     <>
       <section ref={targetRef} className="w-screen h-screen text-white">
-        <motion.div style={{ opacity: isMobile ? 1 : opacity }} className="max-w-7xl md:w-full w-5/6 h-full m-auto">
+        <motion.div style={{ opacity: isMobile ? 1 : opacity }} className="max-w-screen-xl md:w-full w-5/6 h-full m-auto">
           <h2 className="md:text-6xl text-3xl pl-4 text-yellow-300 font-bagel">Projects</h2>
-          <p className=" pt-4 pl-4 md:text-xl text-sm">Recent projects that we loved working on.</p>
+          <p className=" pt-4 pl-4">Recent projects that we loved working on.</p>
           <div ref={ref} className="flex justify-between items-center w-full h-3/4 m-auto mt-10 relative overflow-hidden">
             <div className="flex justify-center items-center h-1/4 rounded-2xl hover:bg-slate-900" onClick={prevProject}>
               <i className="fa-solid fa-chevron-left flex-1 cursor-pointer text-4xl p-2 text-yellow-300"></i>

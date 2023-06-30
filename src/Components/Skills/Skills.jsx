@@ -16,7 +16,7 @@ function Skills({ isMobile }) {
   return (
     <>
       <section ref={targetRef} className="w-screen h-screen flex justify-center items-center text-white md:overflow-hidden relative">
-        <motion.div style={{ x: isMobile ? 0 : x, opacity: isMobile ? 1 : opacity }} className=" max-w-7xl w-5/6 md:h-1/4 md:flex md:justify-between md:items-start gap-8 md:fixed top-1/2">
+        <motion.div style={{ x: isMobile ? 0 : x, opacity: isMobile ? 1 : opacity }} className=" max-w-screen-xl w-5/6 md:h-1/4 md:flex md:justify-between md:items-start gap-8 md:fixed top-1/2">
           {skillsData.map((skill, index) => {
             return (
               <div className="pt-4" key={`${skill.title}-${index}`}>
