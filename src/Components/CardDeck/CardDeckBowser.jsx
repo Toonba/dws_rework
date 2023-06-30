@@ -42,7 +42,7 @@ const linkMotion = {
 function CardDeckBowser({ project }) {
   return (
     <>
-      <motion.a href={project.link} variants={linkMotion} className="absolute md:w-1/2 w-[99%] h-[6vw] m-auto inset-1 flex justify-center items-center bg-blue-950 rounded-xl hover:bg-blue-500 border border-yellow-200">
+      <motion.a href={project.link} variants={linkMotion} className="absolute md:w-1/2 w-[99%] h-[3vw] m-auto inset-1 flex justify-center items-center bg-blue-950 rounded-xl hover:bg-blue-500 border border-yellow-200">
         <div className="w-full md:text-2xl text-sm text-center text-yellow-300 font-bagel">Take a look</div>
       </motion.a>
       <motion.div variants={detailsMotion} className="w-full [aspect-ratio:7/9] m-auto flex flex-col justify-around absolute inset-1 bg-blue-950 rounded-xl overflow-hidden border border-yellow-200">
