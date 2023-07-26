@@ -6,3 +6,5 @@ I added some animations for each section and reworked how projects are displayed
 
 - Bowser view where project's card expand while hovered.
 - Mobile view where project's card is flipped on click.
+
+You can take a look to my work [here](https://dws-rework.vercel.app/)
